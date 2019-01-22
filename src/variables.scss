@@ -1,0 +1,34 @@
+/* base font size - applied at body / html level */
+$fs-base: 1rem;
+/* heading font sizes */
+$fs-h1: 2.25rem;
+$fs-h2: 2rem;
+$fs-h3: 1.75rem;
+$fs-h4: 1.5rem;
+$fs-h5: 1.25rem;
+$fs-h6: 1.125rem;
+
+
+//colors
+$clr-black: black;
+$clr-white: white;
+$clr-primary: rgb(0, 140, 201);
+$clr-secondary: #9A9A9A;
+
+$clr-btn-hover: #555;
+
+$clr-sidebar: rgb(48, 51, 54);
+$clr-txt-helper: #cecece;
+
+//--------------------------------------------------------------------------
+//shared function lists
+$btn-radius: 0.3125rem;
+@mixin my-radius-mixin($some-number) {
+    border-radius: $some-number;
+    /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+    -webkit-border-radius: $some-number; 
+    /* Firefox 1-3.6 */
+    -moz-border-radius: $some-number; 
+    /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+    border-radius: $some-number;
+}

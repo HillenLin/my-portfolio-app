@@ -1,0 +1,26 @@
+@import "../../../variables.scss";
+
+header{
+    padding-bottom: 35px;
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
+    h1{
+        color: $clr-primary;
+        margin:0px;
+        text-transform: capitalize;
+        padding-left: 25px;
+        padding-top: 25px;
+        span{
+            color: $clr-txt-helper;
+        }
+    }
+    
+    h5{
+        color: $clr-primary;
+        text-transform: capitalize;
+        margin:0px;
+        font-weight: lighter;
+        padding-left: 25px;
+    }
+}

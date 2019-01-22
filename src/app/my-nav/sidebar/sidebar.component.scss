@@ -1,0 +1,40 @@
+@import "../../../variables.scss";
+
+
+.sidebar{
+    position: fixed;
+    left:0px;
+    top:0px;
+    background: $clr-sidebar;
+    width: 250px;
+    height: 100%;
+    box-sizing: border-box;
+    float: left;
+    height: 100%;
+    text-align:center;
+    button{
+        width: 80%;
+        font-weight: bold;
+    }
+}
+li{
+    list-style-type: none;
+    line-height: 2.5em;
+    text-align:center;
+    a{
+        cursor: pointer;
+        color: $clr-white;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+        display: block;
+    }
+    a.active{
+        background-color: $clr-btn-hover;
+        border-bottom: 1px solid $clr-primary;
+    }
+    &:hover{
+        color: $clr-btn-hover;
+    }
+}

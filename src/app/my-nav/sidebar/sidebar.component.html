@@ -1,4 +1,14 @@
-<ul>
-  <li *ngFor="let menu of menuList" [routerLink]="menu.munuRouter" routerLinkActive="active" [id]="menu.menuId">{{menu.menuName}}</li>
-</ul>
+<div class="sidebar">
+  <section>
+      <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="zhangfenglin"><a class="LI-simple-link" href='https://au.linkedin.com/in/zhangfenglin?trk=profile-badge'>Kevin (ZhangFeng) Lin</a></div>
+    <menu>
+      <ul>
+        <li *ngFor="let menu of menuList">
+          <a [routerLink]="menu.munuRouter" routerLinkActive="active" [id]="menu.menuId">{{menu.menuName}}</a>
+        </li>
+      </ul>
+    </menu>
+  </section>
+</div>
+
 

@@ -1,0 +1,17 @@
+@import "../variables.scss";
+
+
+.entry-wrapper{
+    float: left;
+    width: calc(100% - 250px);
+    height: 100%;
+    margin-left:250px;
+}
+
+.content-wrapper{
+    height: calc(100% - 35px);
+}
+
+.container-fluid{
+    height: 100%;
+}

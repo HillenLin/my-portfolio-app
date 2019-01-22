@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./variables.scss";
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body, html{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    font-size: $fs-base;
+    height: 100%;
+}
+
+h1{
+    font-size: $fs-h1;
+}
+h2{
+    font-size: $fs-h2;
+}
+h3{
+    font-size: $fs-h3;
+}
+h4{
+    font-size: $fs-h4;
+}
+h5{
+    font-size: $fs-h5;
+}
+h6{
+    font-size: $fs-h6;
+}
+p{
+    margin:auto;
+}
+
+menu, ul{
+    padding-left: 0px;
+}
+
+button{
+    width: 100%;
+    background-color: $clr-primary;
+    border: 1px solid $clr-primary;
+    color:  $clr-white;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px 15px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    @include my-radius-mixin($btn-radius);
+    line-height: 2rem;
+}
